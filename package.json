@@ -1,0 +1,16 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "Personal portfolio landing page",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": ["portfolio", "landing page"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.13.2"
+  }
+}
+
