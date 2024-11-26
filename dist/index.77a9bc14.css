@@ -1,0 +1,168 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --additional-font: "Lato", sans-serif;
+  --white-color: #fff;
+  --black-color: #000;
+  --pink-color: #ffc8dd;
+  --light-gray-color: #6c757d;
+  --dark-gray-color: #212529;
+}
+
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link a {
+  display: inline-block;
+}
+
+.link a:focus, .link a:hover {
+  color: inherit;
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.container {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--black-color);
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+}
+
+.collaborate-btn {
+  background-color: var(--pink-color);
+  color: #fff;
+  border-radius: 30px;
+  margin-left: auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.container.collaborate-btn {
+  margin-top: 40px;
+}
+
+section.first-section {
+  background-color: var(--black-color);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.first-section h1 {
+  font-family: var(--additional-font);
+  color: var(--light-gray-color);
+  text-align: center;
+  letter-spacing: 1.4px;
+  max-width: 1100px;
+  margin-top: -130px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.highlight {
+  color: var(--white-color) !important;
+}
+
+.scroll-indicator {
+  opacity: 0;
+  font-size: 30px;
+  animation: 4s forwards fadeIn, 1s infinite alternate moveArrow;
+  position: absolute;
+  bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+section.second-section {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 60px 20px;
+}
+/*# sourceMappingURL=index.77a9bc14.css.map */

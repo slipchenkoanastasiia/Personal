@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+          <a href="#collaborate" class="collaborate-btn">Let's Collaborate</a>
+        </div>
+      </header>
+    <main>
+
+        <section class="first-section">
+            <h1>Вітаю! Я - Анастасія, <span class="highlight">front-end розробник</span> з бекграундом <span class="highlight">10 років в маркетингу,</span> тут я ділюсь своїми проєктами та досвідом.</h1>
+            <div class="scroll-indicator">
+                <span>&darr;</span>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <h1>Заголовок другої секції</h1>
+            <p>Текст другої секції</p>
+        </section>
+
+      </main>
+
+      <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const scrollIndicator = document.querySelector('.scroll-indicator');
+                scrollIndicator.style.opacity = 1;
+                scrollIndicator.classList.add('animate'); 
+            }, 3000); 
+        });
+    </script>
+
+</body>
+</html>
