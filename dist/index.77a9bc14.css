@@ -87,7 +87,8 @@ header {
 
 .collaborate-btn {
   background-color: var(--pink-color);
-  color: #fff;
+  color: var(--white-color);
+  font-family: var(--primary-font);
   border-radius: 30px;
   margin-left: auto;
   padding: 12px 24px;
@@ -95,6 +96,11 @@ header {
   font-weight: bold;
   text-decoration: none;
   transition: background-color .3s;
+}
+
+.collaborate-btn:hover {
+  background-color: var(--white-color);
+  color: var(--dark-gray-color);
 }
 
 .container.collaborate-btn {
@@ -130,20 +136,18 @@ section.first-section {
 
 .scroll-indicator {
   opacity: 0;
-  font-size: 30px;
-  animation: 4s forwards fadeIn, 1s infinite alternate moveArrow;
+  color: var(--white-color);
+  font-size: 45px;
+  transition: opacity 1s ease-in;
   position: absolute;
   bottom: 20px;
+  right: 15%;
+  bottom: 230px !important;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.scroll-indicator.animate {
+  opacity: 1;
+  animation: 1s infinite alternate moveArrow;
 }
 
 @keyframes moveArrow {
@@ -164,5 +168,122 @@ section.second-section {
   background-color: var(--white-color);
   color: var(--black-color);
   padding: 60px 20px;
+}
+
+.collab-section {
+  background-color: var(--pink-color);
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.collab-section h1 {
+  font-family: var(--additional-font);
+  color: var(--dark-gray-color);
+  letter-spacing: 1.4px;
+  max-width: 760px;
+  margin-top: -80px;
+  margin-bottom: 20px;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.collab-section p {
+  font-family: var(--additional-font);
+  color: var(--dark-gray-color);
+  max-width: 900px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.collab-section a {
+  color: var(--blue-color);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.collab-section a:hover {
+  color: var(--white-color);
+}
+
+.contact-section {
+  background-color: var(--pink-color);
+  justify-content: center;
+  align-items: center;
+  margin-top: -250px;
+  display: flex;
+}
+
+.form-container {
+  background-color: var(--pink-color);
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+}
+
+.contact-form h1 {
+  font-family: var(--additional-font);
+  color: var(--dark-gray-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.contact-form label {
+  font-family: var(--primary-font);
+  color: var(--dark-gray-color);
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  color: var(--dark-gray-color);
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px 35px;
+  font-size: 16px;
+  box-shadow: none !important;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: var(--white-color);
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: var(--dark-gray-color);
+  width: 100%;
+  color: var(--white-color);
+  font-size: 16px;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  padding: 18px 36px;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--white-color);
+  color: var(--dark-gray-color);
 }
 /*# sourceMappingURL=index.77a9bc14.css.map */
