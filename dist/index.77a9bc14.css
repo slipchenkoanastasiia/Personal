@@ -164,10 +164,127 @@ section.first-section {
   }
 }
 
-section.second-section {
+.second-section {
   background-color: var(--white-color);
-  color: var(--black-color);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 60px 20px;
+}
+
+.section-title {
+  font-family: var(--additional-font);
+  color: var(--black-color);
+  text-align: center;
+  font-size: 65px;
+  font-weight: 400;
+  font-family: var(--additional-font);
+  margin-bottom: 40px;
+}
+
+.services-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+}
+
+.service {
+  background-color: var(--white-color);
+  border: 1px solid var(--light-gray-color);
+  text-align: left;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 330px;
+  padding: 20px;
+  transition: transform .3s, border-color .3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service-title {
+  color: var(--pink-color);
+  text-align: left;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  position: relative;
+}
+
+.service-list li:before {
+  content: "•";
+  color: #333;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+}
+
+.third-section {
+  color: #fff;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  display: flex;
+}
+
+.third-service-area-content {
+  max-width: 50%;
+}
+
+.third-service-area-title {
+  margin-bottom: 20px;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.third-service-area-description {
+  color: #fffc;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.third-service-area-button {
+  color: #000;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.third-service-area-button:hover {
+  background-color: #ffffffe6;
+}
+
+.third-service-area-image {
+  max-width: 40%;
+}
+
+.third-service-area-image img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
 }
 
 .collab-section {
