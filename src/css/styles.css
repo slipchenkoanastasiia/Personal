@@ -187,6 +187,7 @@
   color: var(--black-color);
   margin-bottom: 40px;
   font-family: var(--additional-font);
+  display: none;
 }
 
 /* Контейнер для блоків послуг */
@@ -235,7 +236,20 @@
   position: relative;
   padding-left: 20px; /* Відступ для крапки */
   margin-bottom: 10px; /* Відступ між пунктами */
-  font-size: 16px;
+  font-size: 18px;
+  font-family: var(--additional-font);
+  font-weight: 400;
+}
+
+.collab-section p {
+  font-family: var(--additional-font);
+  color: var(--dark-gray-color);
+  font-weight: 400;
+  max-width: 900px; 
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: -20px;
+  margin-top: 20px; 
 }
 
 /* Додаємо крапку перед кожним пунктом */
@@ -251,8 +265,8 @@
   /* Стилі для третьої секції */
 .third-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Блоки розташовані один під одним */
+  gap: 60px; /* Відстань між великими блоками */
   background-color: #000; /* Чорний фон */
   color: #fff; /* Білий текст */
   padding: 80px 60px;
@@ -279,8 +293,8 @@
 .third-service-area-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--pink-color);
+  color: var(--white-color);
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -301,6 +315,19 @@
   height: auto;
   border-radius: 12px;
 }
+
+/* Зберігаємо горизонтальне розташування контенту + зображення */
+.third-service-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* Відстань між текстом і зображенням */
+}
+
+
+
+
+
 
 
 

@@ -180,6 +180,7 @@ section.first-section {
   font-weight: 400;
   font-family: var(--additional-font);
   margin-bottom: 40px;
+  display: none;
 }
 
 .services-container {
@@ -219,9 +220,11 @@ section.first-section {
 }
 
 .service-list li {
+  font-size: 18px;
+  font-family: var(--additional-font);
   margin-bottom: 10px;
   padding-left: 20px;
-  font-size: 16px;
+  font-weight: 400;
   position: relative;
 }
 
@@ -237,8 +240,8 @@ section.first-section {
 .third-section {
   color: #fff;
   background-color: #000;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 60px;
   padding: 80px 60px;
   display: flex;
 }
@@ -262,8 +265,8 @@ section.first-section {
 }
 
 .third-service-area-button {
-  color: #000;
-  background-color: #fff;
+  background-color: var(--pink-color);
+  color: var(--white-color);
   border-radius: 30px;
   padding: 12px 24px;
   font-size: 16px;
@@ -285,6 +288,13 @@ section.first-section {
   border-radius: 12px;
   width: 100%;
   height: auto;
+}
+
+.third-service-area {
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  display: flex;
 }
 
 .collab-section {
