@@ -190,7 +190,6 @@
   display: none;
 }
 
-/* Контейнер для блоків послуг */
 .services-container {
   display: flex;
   flex-wrap: wrap;
@@ -198,23 +197,22 @@
   gap: 30px;
 }
 
-/* Картки послуг */
-/* Картки послуг з обводкою */
 .service {
   background-color: var(--white-color);
-  padding: 20px;
   border-radius: 12px;
-  border: 1px solid var(--light-gray-color); /* Тонка обводка */
-  max-width: 330px;
+  border: 2px solid var(--light-gray-color); 
+  padding: 30px;
+  max-width: 300px;
   width: 100%;
   text-align: left;
-  transition: transform 0.3s, border-color 0.3s;
+  border: 1px solid #f2f2f2;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
 }
-
 
 .service-title {
   font-size: 26px;
@@ -224,18 +222,16 @@
   text-align: left;
 }
 
-/* Список послуг */
-/* Загальний стиль для списків */
 .service-list {
-  list-style: none; /* Прибираємо стандартні маркери */
+  list-style: none; 
   padding: 0;
   margin: 0;
 }
 
 .service-list li {
   position: relative;
-  padding-left: 20px; /* Відступ для крапки */
-  margin-bottom: 10px; /* Відступ між пунктами */
+  padding-left: 20px; 
+  margin-bottom: 10px;
   font-size: 18px;
   font-family: var(--additional-font);
   font-weight: 400;
@@ -252,23 +248,33 @@
   margin-top: 20px; 
 }
 
-/* Додаємо крапку перед кожним пунктом */
 .service-list li::before {
-  content: "•"; /* Використовуємо крапку як маркер */
+  content: "•"; 
   position: absolute;
   left: 0;
-  color: #333; /* Колір крапки */
-  font-size: 18px; /* Розмір крапки */
-  line-height: 1; /* Вирівнювання */
+  color: #333; 
+  font-size: 18px; 
+  line-height: 1; 
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
   /* Стилі для третьої секції */
 .third-section {
   display: flex;
-  flex-direction: column; /* Блоки розташовані один під одним */
-  gap: 60px; /* Відстань між великими блоками */
-  background-color: #000; /* Чорний фон */
-  color: #fff; /* Білий текст */
+  flex-direction: column; 
+  gap: 60px; 
+  background-color: #000; 
+  color: #fff; 
   padding: 80px 60px;
 }
 
@@ -276,17 +282,26 @@
   max-width: 50%;
 }
 
+.third-service-area {
+  margin-bottom: 60px; 
+}
+
+.third-service-area:last-child {
+  margin-bottom: 0; 
+}
+
 .third-service-area-title {
-  font-size: 72px;
-  font-weight: bold;
+  font-size: 82px;
   margin-bottom: 20px;
   line-height: 1.2;
+  font-family: var(--additional-font);
+  font-weight: 400;
 }
 
 .third-service-area-description {
   font-size: 18px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8); /* Трохи прозорий текст */
+  color: rgba(255, 255, 255, 0.8); 
   margin-bottom: 30px;
 }
 
@@ -300,10 +315,11 @@
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.3s ease;
+  margin-top: 60px;
 }
 
 .third-service-area-button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--dark-gray-color);
 }
 
 .third-service-area-image {
@@ -316,20 +332,12 @@
   border-radius: 12px;
 }
 
-/* Зберігаємо горизонтальне розташування контенту + зображення */
 .third-service-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px; /* Відстань між текстом і зображенням */
+  gap: 40px;
 }
-
-
-
-
-
-
-
 
 
   /* Стилі для сторінки коллаб */
@@ -376,7 +384,6 @@
     color: var(--white-color);
   }
   
-  /* Загальні стилі для секції */
 .contact-section {
   background-color: var(--pink-color);
   display: flex;
@@ -453,3 +460,67 @@
   background-color: var(--white-color);
   color: var(--dark-gray-color);
 }
+
+/* Стилі для секції послуг */
+.services-section {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: var(--white-color); 
+}
+
+.service-card {
+  background-color: var(--white-color);
+  border-radius: 12px;
+  border: 2px solid var(--light-gray-color); 
+  padding: 30px;
+  max-width: 300px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #f2f2f2;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--pink-color); 
+  margin-bottom: 15px;
+}
+
+.service-description {
+  font-size: 16px;
+  color: var(--dark-gray-color);
+  margin-bottom: 15px;
+}
+
+.service-perfect, .service-outcome {
+  font-size: 14px;
+  color: var(--dark-gray-color);
+  margin-bottom: 10px;
+}
+
+.service-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white-color);
+  background-color: var(--pink-color); 
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.service-btn:hover {
+  background-color: var(--dark-gray-color); 
+}
+
