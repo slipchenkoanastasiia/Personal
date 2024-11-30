@@ -192,17 +192,19 @@ section.first-section {
 
 .service {
   background-color: var(--white-color);
-  border: 1px solid var(--light-gray-color);
+  border: 2px solid var(--light-gray-color);
   text-align: left;
+  border: 1px solid #f2f2f2;
   border-radius: 12px;
   width: 100%;
-  max-width: 330px;
-  padding: 20px;
-  transition: transform .3s, border-color .3s;
+  max-width: 300px;
+  padding: 30px;
+  transition: transform .3s, box-shadow .3s;
 }
 
 .service:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 15px #0003;
 }
 
 .service-title {
@@ -237,6 +239,17 @@ section.first-section {
   left: 0;
 }
 
+.hidden {
+  opacity: 0;
+  transition: opacity .6s ease-out, transform .6s ease-out;
+  transform: translateY(50px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .third-section {
   color: #fff;
   background-color: #000;
@@ -250,11 +263,20 @@ section.first-section {
   max-width: 50%;
 }
 
+.third-service-area {
+  margin-bottom: 60px;
+}
+
+.third-service-area:last-child {
+  margin-bottom: 0;
+}
+
 .third-service-area-title {
-  margin-bottom: 20px;
-  font-size: 72px;
-  font-weight: bold;
+  font-size: 82px;
   line-height: 1.2;
+  font-family: var(--additional-font);
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .third-service-area-description {
@@ -268,6 +290,7 @@ section.first-section {
   background-color: var(--pink-color);
   color: var(--white-color);
   border-radius: 30px;
+  margin-top: 60px;
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
@@ -277,7 +300,7 @@ section.first-section {
 }
 
 .third-service-area-button:hover {
-  background-color: #ffffffe6;
+  background-color: var(--dark-gray-color);
 }
 
 .third-service-area-image {
@@ -412,5 +435,67 @@ section.first-section {
 .submit-btn:hover {
   background-color: var(--white-color);
   color: var(--dark-gray-color);
+}
+
+.services-section {
+  background-color: var(--white-color);
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+  display: flex;
+}
+
+.service-card {
+  background-color: var(--white-color);
+  border: 2px solid var(--light-gray-color);
+  text-align: left;
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  padding: 30px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px #0003;
+}
+
+.service-title {
+  color: var(--pink-color);
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service-description {
+  color: var(--dark-gray-color);
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.service-perfect, .service-outcome {
+  color: var(--dark-gray-color);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.service-btn {
+  color: var(--white-color);
+  background-color: var(--pink-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color .3s;
+  display: inline-block;
+}
+
+.service-btn:hover {
+  background-color: var(--dark-gray-color);
 }
 /*# sourceMappingURL=index.77a9bc14.css.map */
