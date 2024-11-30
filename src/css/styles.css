@@ -85,7 +85,7 @@
     display: flex;
     justify-content: flex-end; 
     align-items: center;
-    padding: 40px;
+    padding: 50px;
     background-color: var(--black-color);
     width: 100%;
   }
@@ -95,7 +95,7 @@
     color: var(--white-color);
     font-family: var(--primary-font);
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -133,14 +133,13 @@
     line-height: 1.08;
     letter-spacing: 1.4px;
     font-weight: 400;
-    margin-top: -130px;
+    margin-top: -150px;
   }
 
   .highlight {
     color: var(--white-color) !important;
   }
 
-  /* Стилі для стрілки */
 .scroll-indicator {
   position: absolute;
   bottom: 230px !important;
@@ -148,7 +147,6 @@
   opacity: 0; 
   color: var(--white-color);
   transition: opacity 1s ease-in; 
-  bottom: 20px; 
   right: 15%;
 }
 
@@ -202,7 +200,7 @@
   border-radius: 12px;
   border: 2px solid var(--light-gray-color); 
   padding: 30px;
-  max-width: 300px;
+  max-width: 340px;
   width: 100%;
   text-align: left;
   border: 1px solid #f2f2f2;
@@ -216,7 +214,8 @@
 
 .service-title {
   font-size: 26px;
-  font-weight: bold;
+  font-family: var(--primary-font);
+  font-weight: 400;
   color: var(--pink-color);
   margin-bottom: 25px;
   text-align: left;
@@ -235,6 +234,8 @@
   font-size: 18px;
   font-family: var(--additional-font);
   font-weight: 400;
+  color: var(--dark-gray-color);
+  line-height: 1.1;
 }
 
 .collab-section p {
@@ -272,7 +273,7 @@
 .third-section {
   display: flex;
   flex-direction: column; 
-  gap: 60px; 
+  gap: 70px; 
   background-color: #000; 
   color: #fff; 
   padding: 80px 60px;
@@ -294,13 +295,16 @@
   font-size: 82px;
   margin-bottom: 20px;
   line-height: 1.2;
-  font-family: var(--additional-font);
-  font-weight: 400;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  margin-top: 30px;
 }
 
 .third-service-area-description {
   font-size: 18px;
-  line-height: 1.6;
+  font-family: var(--additional-font);
+  font-weight: 400;
+  line-height: 1.3;
   color: rgba(255, 255, 255, 0.8); 
   margin-bottom: 30px;
 }
@@ -310,7 +314,7 @@
   padding: 12px 24px;
   background-color: var(--pink-color);
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   border-radius: 30px;
@@ -468,6 +472,8 @@
   justify-content: center;
   padding: 50px 20px;
   background-color: var(--white-color); 
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .service-card {
@@ -475,7 +481,7 @@
   border-radius: 12px;
   border: 2px solid var(--light-gray-color); 
   padding: 30px;
-  max-width: 300px;
+  max-width: 340px;
   width: 100%;
   text-align: left;
   border: 1px solid #f2f2f2;
@@ -488,29 +494,52 @@
 }
 
 .service-title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: var(--pink-color); 
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .service-description {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--dark-gray-color);
-  margin-bottom: 15px;
+  margin-bottom: 45px;
+  font-family: var(--additional-font);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.service-label {
+  font-weight: 600; 
+  color: var(--dark-gray-color); 
+  font-size: 16px; 
+  font-family: var(--additional-font);
 }
 
 .service-perfect, .service-outcome {
-  font-size: 14px;
-  color: var(--dark-gray-color);
+  font-size: 16px;
+  color: var(--light-gray-color); 
   margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.collab-section p {
+  font-family: var(--additional-font);
+  color: var(--dark-gray-color);
+  font-weight: 400;
+  max-width: 900px; 
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: -20px;
+  margin-top: 20px; 
 }
 
 .service-btn {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 45px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: var(--white-color);
   background-color: var(--pink-color); 
@@ -522,5 +551,50 @@
 
 .service-btn:hover {
   background-color: var(--dark-gray-color); 
+}
+
+/* Стилі для п'ятої секції */
+.fifth-section {
+  background-color: var(--pink-color); 
+  padding: 60px 20px; 
+  text-align: center; 
+}
+
+.fifth-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  font-size: 18px; 
+  color: var(--white-color); 
+  margin-bottom: 10px; 
+}
+
+.main-title {
+  font-size: 36px; 
+  font-weight: 700; 
+  line-height: 1.4; 
+  color: var(--dark-gray-color); 
+  margin-bottom: 40px; 
+}
+
+.collaboration-btn {
+  background-color: var(--black-color);
+  color: var(--white-color); 
+  font-size: 16px; 
+  font-weight: 500; 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 30px; 
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collaboration-btn:hover {
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
