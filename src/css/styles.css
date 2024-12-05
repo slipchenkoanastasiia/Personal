@@ -111,6 +111,50 @@
   .container.collaborate-btn {
     margin-top: 40px;
   }
+
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .language-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 0; /* Розміщення в крайньому лівому куті */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .language-select {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    display: none; /* Сховати випадаючий список за замовчуванням */
+  }
+  
+  .language-select.active {
+    display: block; /* Показати список при активації */
+  }
+  
+  .lang {
+    display: none;
+  }
+  
+  .lang.active {
+    display: block;
+  }
   
    /* Перша секція */
    section.first-section {
@@ -253,7 +297,7 @@
   content: "•"; 
   position: absolute;
   left: 0;
-  color: #333; 
+  color: var(--pink-color);
   font-size: 18px; 
   line-height: 1; 
 }
@@ -268,6 +312,12 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.list-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 
   /* Стилі для третьої секції */
 .third-section {
@@ -364,13 +414,14 @@
   }
   
   .collab-section h1 {
-    font-family: var(--additional-font);
     color: var(--dark-gray-color);
-    font-size: 55px;
+    font-size: 52px;
+    margin-bottom: 20px;
+    line-height: 1.0;
+    font-family: var(--primary-font);
     max-width: 760px; 
-    line-height: 1.08;
-    letter-spacing: 1.4px;
-    font-weight: 400;
+    letter-spacing: 1.1px;
+    font-weight: 500;
     margin-bottom: 20px; 
     margin-top: -80px;
   }
@@ -380,8 +431,8 @@
     color: var(--dark-gray-color);
     font-weight: 400;
     max-width: 900px; 
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 18px !important;
+    line-height: 1.3;
     margin-bottom: -20px;
     margin-top: 20px; 
   }
@@ -578,12 +629,13 @@
 .subtitle {
   font-size: 18px; 
   color: var(--white-color); 
-  margin-bottom: 10px; 
+  margin-bottom: 0px; 
 }
 
 .main-title {
-  font-size: 36px; 
-  font-weight: 700; 
+  font-family: var(--additional-font);
+  font-size: 46px; 
+  font-weight: 600; 
   line-height: 1.4; 
   color: var(--dark-gray-color); 
   margin-bottom: 40px; 
@@ -605,4 +657,23 @@
   transform: translateY(-3px); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
+.fifth-section .social-icons {
+  display: flex;
+  justify-content: center; /* Центрування іконок */
+  gap: 20px; /* Відстань між іконками */
+  margin-top: 10px; /* Відступ зверху */
+}
+
+.fifth-section .social-icon svg {
+  width: 30px; /* Розмір іконок */
+  height: 30px;
+  cursor: pointer; /* Зміна курсору при наведенні */
+  transition: transform 0.3s ease; /* Анімація при наведенні */
+}
+
+.fifth-section .social-icon svg:hover {
+  transform: scale(1.1); /* Збільшення при наведенні */
+}
+
 
