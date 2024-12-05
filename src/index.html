@@ -16,11 +16,40 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-          <a href="./collab.html" class="collaborate-btn">Let's Collaborate</a>
-        </div>
-      </header>
+  <header>
+    <div class="language-switcher">
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"  
+      viewBox="0 0 24 24"
+      stroke="white"  
+      stroke-width="1.5"
+      class="language-icon"
+      id="language-toggle"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+      />
+    </svg>
+    <select class="language-select hidden" id="language-select">
+      <option value="en">English</option>
+      <option value="ua">Українська</option>
+      <option value="kk">Қазақ</option>
+    </select>
+  </div>
+  
+  <!-- Content to be translated -->
+  <div class="content">
+    <p class="lang" data-lang="en">Hello!</p>
+    <p class="lang" data-lang="ua">Привіт!</p>
+    <p class="lang" data-lang="kk">Сәлеметсіз бе!</p>
+  </div>
+    </div>
+    <a href="./collab.html" class="collaborate-btn">Let's Collaborate</a>
+  </header>
+  
     <main>
 
         <section class="first-section">
@@ -36,7 +65,7 @@
             <div class="service hidden">
               <h2 class="service-title">Front-end</h2>
               <ul class="service-list">
-                <li>Сучасний та стильний інтерфейс</li>
+                <li>Сучасний та стильний інтерфейс</li>                
                 <li>Валідний код, який відповідає стандартам W3C</li>
                 <li>Адаптивний дизайн</li>
                 <li>Реалізація інтерактивних елементів та інтеграція з API</li>
@@ -74,7 +103,7 @@
                 <a href="#" class="third-service-area-button">Learn More</a>
               </div>
               <div class="third-service-area-video">
-                <video width="69%" autoplay muted loop>
+                <video width="61%" autoplay muted loop>
                   <source src="media/video1.MP4" type="video/mp4">
                 </video>
               </div>
@@ -90,7 +119,7 @@
                 <a href="#" class="third-service-area-button">Learn More</a>
               </div>
               <div class="third-service-area-video">
-                <video width="60%" autoplay muted loop>
+                <video width="53.6%" autoplay muted loop>
                   <source src="media/video2.MP4" type="video/mp4">
                 </video>
             </div>
@@ -106,7 +135,7 @@
                 <a href="#" class="third-service-area-button">Learn More</a>
               </div>
               <div class="third-service-area-video">
-                <video width="60%" autoplay muted loop>
+                <video width="53.5%" autoplay muted loop>
                   <source src="media/video3.MP4" type="video/mp4">
                 </video>
               </div>
@@ -121,9 +150,10 @@
               </p>
               <p class="service-perfect"><span class="service-label">Підходить для:</span> стартапів, малого та середнього бізнесу.</p>
               <p class="service-outcome"><span class="service-label">Результат:</span> унікальний бренд, який привертає увагу вашої аудиторії.</p>
-              <button class="service-btn">Let's Collaborate</button>
+              <a href="./collab.html" class="service-link">
+                <button class="service-btn">Let's Collaborate</button>
+              </a>
             </div>
-          
             <div class="service service-card hidden">
               <h2 class="service-title">Фронтенд-розробка</h2>
               <p class="service-description">
@@ -131,9 +161,10 @@
               </p>
               <p class="service-perfect"><span class="service-label">Підходить для:</span> Брендів, які бажають розширити онлайн-присутність.</p>
               <p class="service-outcome"><span class="service-label">Результат:</span> Сайт, який вражає своєю функціональністю та дизайном.</p>
-              <button class="service-btn">Let's Collaborate</button>
+              <a href="./collab.html" class="service-link">
+                <button class="service-btn">Let's Collaborate</button>
+              </a>
             </div>
-          
             <div class="service service-card hidden">
               <h2 class="service-title">Стратегія та брендинг</h2>
               <p class="service-description">
@@ -141,7 +172,9 @@
               </p>
               <p class="service-perfect"><span class="service-label">Підходить для:</span> Бізнесів, які шукають нові шляхи розвитку.</p>
               <p class="service-outcome"><span class="service-label">Результат:</span> Продуманий бренд та сучасний вебсайт.</p>
-              <button class="service-btn">Let's Collaborate</button>
+              <a href="./collab.html" class="service-link">
+                <button class="service-btn">Let's Collaborate</button>
+              </a>
             </div>
           </section>
           
@@ -151,45 +184,82 @@
               <h1 class="main-title">
                 Давайте розглянемо детальніше
               </h1>
-              <button class="collaboration-btn">Let’s Collaborate</button>
+              <div class="social-icons">
+                <a href="https://t.me/" target="_blank" class="social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 3 9.857 20.171c-.541.812-1.453.812-2.011.604l-4.067-1.806c-.943-.428-.943-1.027-.169-1.47l2.947-2.254c.32-.25.32-.46-.018-.7L3.322 11.7c-.339-.24-.267-.544.211-.806L21.093 2.121c.732-.34 1.337.133 1.056 1.039Z"/>
+                  </svg>
+                </a>
+                <a href="https://instagram.com/" target="_blank" class="social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37a4 4 0 1 1-7.9 1.31 4 4 0 0 1 7.9-1.31z"/>
+                    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+                  </svg>
+                </a>
+              </div>
             </div>
-          </section>
-                       
-        
-    
+              
       </main>
 
       <script>
-      window.addEventListener('load', () => {
-        setTimeout(() => {
-            const scrollIndicator = document.querySelector('.scroll-indicator');
-            scrollIndicator.classList.add('animate'); 
-        }, 3000); 
-    });
-     </script>
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+              const scrollIndicator = document.querySelector('.scroll-indicator');
+              scrollIndicator.classList.add('animate'); 
+          }, 3000); 
+      });
+       </script>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const services = document.querySelectorAll(".service");
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); 
+          }
+        });
+      },
+      {
+        threshold: 0.2, 
+      }
+    );
+  
+    services.forEach(service => observer.observe(service));
+  });
+  </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const services = document.querySelectorAll(".service");
 
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target); 
-        }
-      });
-    },
-    {
-      threshold: 0.2, 
-    }
-  );
+const languageSelect = document.getElementById('language-select');
+const languageIcon = document.getElementById('language-toggle');
+const content = document.querySelector('.content');
 
-  services.forEach(service => observer.observe(service));
+languageSelect.addEventListener('change', (event) => {
+  const selectedLanguage = event.target.value;
+
+  const langElements = content.querySelectorAll('.lang');
+  langElements.forEach(element => {
+    element.classList.remove('active');
+  });
+
+  const activeLang = content.querySelector(`.lang[data-lang="${selectedLanguage}"]`);
+  if (activeLang) {
+    activeLang.classList.add('active');
+  }
+
+  languageSelect.classList.remove('active');
 });
-</script>
 
+languageIcon.addEventListener('click', () => {
+  languageSelect.classList.toggle('active');
+});
+
+</script> 
 
 </body>
 </html>
