@@ -270,7 +270,6 @@
   letter-spacing: 1.1;
   color: var(--black-color);
   margin-bottom: 40px;
-  font-family: var(--additional-font);
   display: none;
 }
 
@@ -286,7 +285,7 @@
   border-radius: 12px;
   border: 2px solid var(--light-gray-color); 
   padding: 30px;
-  max-width: 340px;
+  max-width: 330px;
   width: 100%;
   text-align: left;
   border: 1px solid #f2f2f2;
@@ -320,7 +319,7 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-family: var(--additional-font);
-  font-weight: 400;
+  font-weight: 300;
   color: var(--dark-gray-color);
   line-height: 1.1;
   letter-spacing: 0.1;
@@ -367,7 +366,7 @@
 }
 
 .third-service-area {
-  margin-bottom: 60px; 
+  margin-bottom: 70px; 
 }
 
 .third-service-area:last-child {
@@ -396,7 +395,7 @@
 }
 
 .custom-button-2 {
-  padding: 12px 42px;
+  padding: 12px 24px;
   border: 1px solid var(--white-color); 
   color: var(--white-color); 
   background-color: var(--black-color);
@@ -407,6 +406,7 @@
   text-align: center;
   cursor: pointer; 
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .custom-button:hover {
@@ -414,9 +414,14 @@
   color: var(--black-color);
 }
 
+.custom-button-2:hover {
+  background-color: var(--white-color); 
+  color: var(--black-color);
+}
+
 .third-service-area-title {
   font-size: 82px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.2;
   font-family: var(--primary-font);
   font-weight: 500;
@@ -426,7 +431,7 @@
 .third-service-area-description {
   font-size: 18px;
   font-family: var(--additional-font);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.4;
   color: rgba(255, 255, 255, 0.8); 
@@ -437,7 +442,7 @@
 .third-service-area-description-2 {
   font-size: 18px;
   font-family: var(--additional-font);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.4;
   color: rgba(255, 255, 255, 0.8); 
@@ -497,15 +502,15 @@
     align-items: center; 
     text-align: center; 
   }
-  
+
   .collab-section h1 {
     color: var(--dark-gray-color);
-    font-size: 52px;
+    font-size: 65px;
     margin-bottom: 20px;
     line-height: 1.0;
     font-family: var(--primary-font);
-    max-width: 760px; 
-    letter-spacing: 1.1px;
+    max-width: 860px; 
+    letter-spacing: 1.2px;
     font-weight: 500;
     margin-bottom: 20px; 
     margin-top: -80px;
@@ -513,19 +518,21 @@
   
   .collab-section p {
     font-family: var(--additional-font);
-    color: var(--dark-gray-color);
-    font-weight: 400;
+    color: var(--light-gray-color);
     max-width: 900px; 
     font-size: 18px !important;
-    line-height: 1.3;
+    font-weight: 300;
+    line-height: 1.4 !important;
+    letter-spacing: 0.2;
     margin-bottom: -20px;
     margin-top: 20px; 
   }
   
   .collab-section a {
-    color: var(--blue-color); 
+    color: var(--white-color);
     text-decoration: underline;
     font-weight: 500;
+    font-family: var(--primary-font);
   }
   
   .collab-section a:hover {
@@ -537,7 +544,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -250px;
+  margin-top: -230px;
 }
 
 .form-container {
@@ -557,10 +564,12 @@
 }
 
 .contact-form label {
-  font-family: var(--primary-font);
+  font-family: var(--additional-font);
   color: var(--dark-gray-color);
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.0;
+  letter-spacing: 0.4;
   margin-bottom: 5px;
   display: block;
 }
@@ -595,7 +604,7 @@
   color: var(--white-color);
   border: none;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--primary-font);
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -612,7 +621,7 @@
 /* Стилі для секції послуг */
 .services-section {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
   padding: 50px 20px;
   background-color: var(--white-color); 
@@ -639,9 +648,12 @@
 
 .service-title {
   font-size: 26px;
-  font-weight: bold;
-  color: var(--pink-color); 
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--pink-color);
   margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 0.4;
 }
 
 .service-description {
@@ -649,8 +661,9 @@
   color: var(--dark-gray-color);
   margin-bottom: 45px;
   font-family: var(--additional-font);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.1;
+  letter-spacing: 0.2;
 }
 
 .service-label {
@@ -712,17 +725,23 @@
 }
 
 .subtitle {
-  font-size: 18px; 
-  color: var(--white-color); 
+  font-size: 18px;
+  font-family: var(--additional-font);
+  font-weight: 400;
+  color: var(--white-color);
+  line-height: 1.1;
+  letter-spacing: 0.4;
   margin-bottom: 0px; 
+
 }
 
 .main-title {
-  font-family: var(--additional-font);
-  font-size: 46px; 
-  font-weight: 600; 
-  line-height: 1.4; 
-  color: var(--dark-gray-color); 
+  font-size: 46px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--dark-gray-color);
+  line-height: 1.4;
+  letter-spacing: 0.4;
   margin-bottom: 40px; 
 }
 
@@ -764,34 +783,44 @@
 
   /* Сторінка стратегії */
 
-  .hero {
-    margin: 150px auto 0 auto; 
-    max-width: calc(100% - 90px); 
-    padding-right: 90px; 
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+.hero {
+  margin: 150px auto 0 auto; 
+  max-width: calc(100% - 90px); 
+  padding-right: 90px; 
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
-  .hero-title {
-    font-size: 82px;
-    margin-bottom: 40px;
-    line-height: 1.0;
-    font-family: var(--primary-font);
-    font-weight: 400;
-    color: var(--black-color);
-    width: 890px;
-  }
+.hero-title {
+  font-size: 82px;
+  margin-bottom: 40px;
+  line-height: 1.0;
+  letter-spacing: 1.2px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--black-color);
+  width: 890px;
+}
   
   .hero-description {
-    font-size: 32px;
+    font-size: 26px;
     font-family: var(--additional-font);
-    font-weight: 400;
-    line-height: 1.3;
-    color: var(--dark-gray-color);
-    width: 950px;
-    letter-spacing: 0.2px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.4;
+    width: 750px;
   }
+
+  .hero-description-2 {
+    font-size: 26px;
+    font-family: var(--additional-font);
+    color: var(--light-gray-color);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.4;
+    width: 750px;
+  }  
 
   .hero.visible {
     opacity: 1; 
@@ -816,42 +845,66 @@
 }
 
 .portfolio-title {
-  font-size: 34px;
-  margin-bottom: 40px;
+  margin-bottom: 10px !important;
   margin-top: -40px;
-  line-height: 1.0;
+  font-size: 26px;
   font-family: var(--primary-font);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black-color);
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 0.4;
+  width: 700px;
+}
+
+.portfolio-title-2 {
+  margin-bottom: 10px !important;
+  font-size: 26px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 0.4;
   width: 700px;
 }
 
 .hero-tabl {
-  margin: 145px auto 0 auto; 
-  max-width: calc(100% - 90px); 
+  margin: 185px auto 0 auto; 
+  max-width: calc(100% - 60px); 
   padding-right: 90px; 
 }
 
 .portfolio-description {
-font-size: 18px;
-font-family: var(--additional-font);
-font-weight: 400;
-line-height: 1.3;
-color: var(--dark-gray-color);
-margin-bottom: 30px;
+  font-size: 18px;
+  color: var(--dark-gray-color);
+  font-family: var(--additional-font);
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 0.4;
+margin-bottom: 70px;
 max-width: 900px;
 }
 
 .campaign-stats {
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.campaign-stats-2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .campaign-title {
-  font-size: 24px;
-  font-family: var(--additional-font);
-  font-weight: 400;
-  line-height: 1.3;
-  color: var(--dark-gray-color)
+  font-size: 26px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--pink-color);
+  margin-bottom: 20px;
+  text-align: left;
+  letter-spacing: 0.4;
+
 }
 
 .stats-list {
@@ -866,7 +919,8 @@ max-width: 900px;
 
 .stats-list li {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.3;
+  letter-spacing: 0.2;
   position: relative;
   padding-left: 25px;
   color: var(--dark-gray-color);
@@ -884,31 +938,45 @@ max-width: 900px;
   border-radius: 50%;
 }
 
+.service-label-2 {
+  font-weight: 600; 
+  color: var(--dark-gray-color); 
+  font-size: 16px; 
+  font-family: var(--additional-font);
+  margin-top: 50px !important;
+}
+
 .portfolio-img {
-  display: flex; /* Використовуємо flexbox для вирівнювання зображень */
-  gap: 60px; /* Відстань між зображеннями */
+  display: flex; 
+  gap: 60px; 
+}
+
+.portfolio-img-2 {
+  display: flex; 
+  gap: 60px;
+  margin-top: 40px; 
 }
 
 .portfolio-img img {
-  max-width: 450px; /* Забезпечуємо, щоб зображення не виходили за межі контейнера */
-  height: auto; /* Зберігаємо пропорції зображення */
+  max-width: 450px; 
+  height: auto; 
 }
 
 
 .img-card p {
-  margin-top: 10px; /* Відстань між зображенням і текстом */
-  font-size: 18px; /* Розмір шрифта */
-  color: #333; /* Колір тексту */
+  margin-top: 10px; 
+  font-size: 18px; 
+  color: #333; 
 }
 
 .stats-list-2 {
   display: grid;
-  grid-template-columns: 1fr; /* Одна колонка */
-  gap: 20px; /* Відстань між елементами */
+  grid-template-columns: 1fr; 
+  gap: 10px; 
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 700px; /* Ширина контейнера */
+  width: 700px;
 }
 
 .stats-list-2 li {
@@ -929,4 +997,9 @@ max-width: 900px;
   height: 8px;
   background-color: var(--pink-color);
   border-radius: 50%;
+}
+
+.hero-content{
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
