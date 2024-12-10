@@ -40,7 +40,6 @@
     </select>
   </div>
   
-  <!-- Content to be translated -->
   <div class="content">
     <p class="lang" data-lang="en">Hello!</p>
     <p class="lang" data-lang="ua">Привіт!</p>
@@ -53,11 +52,37 @@
     <main>
 
         <section class="first-section">
-            <h1>Вітаю! Я - Анастасія, <span class="highlight">front-end розробник</span> з бекграундом <span class="highlight">10 років в маркетингу,</span> тут я ділюсь своїми проєктами та досвідом.</h1>
+            <h1>Вітаю! Я - Анастасія, <span class="highlight">front-end розробник</span> з бекґраундом <span class="highlight">10 років в маркетингу,</span> тут я ділюсь своїми проєктами та досвідом.</h1>
             <div class="scroll-indicator">
                 <span>&darr;</span>
             </div>
         </section>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".first-section h1"); 
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible"); 
+          observer.unobserve(entry.target); 
+        }
+      });
+    },
+    {
+      threshold: 0.2, 
+    }
+  );
+
+  if (header) {
+    observer.observe(header); 
+  }
+});
+
+</script>
+        
         
         <section class="second-section">
           <h1 class="section-title">Можливості</h1>
@@ -95,6 +120,11 @@
         <section class="third-section">
             <div class="third-service-area">
               <div class="third-service-area-content">
+                <div class="third-service-area-buttons">
+                  <div class="custom-button">Website</div>
+                  <div class="custom-button">UI Design</div>
+                  <div class="custom-button">Branding</div>
+                </div>
                 <h2 class="third-service-area-title">Front-end</h2>
                 <p class="third-service-area-description">
                     Створюю вебсайти, які поєднують глибоке розуміння вашої аудиторії та унікальність вашого бренду. 
@@ -111,8 +141,13 @@
           
             <div class="third-service-area">
               <div class="third-service-area-content">
+                <div class="third-service-area-buttons">
+                  <div class="custom-button-2">Brand Strategy</div>
+                  <div class="custom-button-2">Visual Identity</div>
+                  <div class="custom-button-2">Branding</div>
+                </div>
                 <h2 class="third-service-area-title">Branding</h2>
-                <p class="third-service-area-description">
+                <p class="third-service-area-description-2">
                     Сильна візуальна ідентичність для бренду є необхідністю. Створюю айдентику, яка відображає суть вашого бізнесу, 
                     допомагаючи вам встановлювати зв’язок з аудиторією та вигідно виділятися на всіх платформах.
                 </p>
@@ -127,8 +162,13 @@
           
             <div class="third-service-area">
               <div class="third-service-area-content">
+                <div class="third-service-area-buttons">
+                  <div class="custom-button">Market Reserch</div>
+                  <div class="custom-button">Brand Strategy</div>
+                  <div class="custom-button">Communication</div>
+                </div>
                 <h2 class="third-service-area-title">Strategy</h2>
-                <p class="third-service-area-description">
+                <p class="third-service-area-description-2">
                     Створюю стратегії, які дозволяють вашому бренду розкрити їх повний потенціал. 
                     Детальний аналіз ринку, дослідження споживачів, розробка чіткої стратегії — всі необхідні інструменти для успіху вашого бренду.
                 </p>
@@ -201,6 +241,29 @@
             </div>
               
       </main>
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const services = document.querySelectorAll(".service");
+        
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target); 
+                }
+              });
+            },
+            {
+              threshold: 0.2, 
+            }
+          );
+        
+          services.forEach(service => observer.observe(service));
+        });
+        </script>
 
       <script>
         window.addEventListener('load', () => {
