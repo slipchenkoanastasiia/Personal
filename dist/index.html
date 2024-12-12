@@ -45,25 +45,6 @@
                 <span>&darr;</span>
             </div>
         </section>
-
-        <script>document.addEventListener("DOMContentLoaded", ()=>{
-    const header = document.querySelector(".first-section h1");
-    const observer = new IntersectionObserver((entries, observer)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
-    if (header) observer.observe(header);
-});
-
-</script>
-        
-        
         <section class="second-section">
           <h1 class="section-title">Можливості</h1>
           <div class="services-container">
@@ -222,68 +203,9 @@
               
       </section></main>
 
-
-      <script>document.addEventListener("DOMContentLoaded", ()=>{
-    const services = document.querySelectorAll(".service");
-    const observer = new IntersectionObserver((entries, observer)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
-    services.forEach((service)=>observer.observe(service));
-});
-
-</script>
-
-      <script>window.addEventListener('load', ()=>{
-    setTimeout(()=>{
-        const scrollIndicator = document.querySelector('.scroll-indicator');
-        scrollIndicator.classList.add('animate');
-    }, 3000);
-});
-
-</script>
-  
-  <script>document.addEventListener("DOMContentLoaded", ()=>{
-    const services = document.querySelectorAll(".service");
-    const observer = new IntersectionObserver((entries, observer)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
-    services.forEach((service)=>observer.observe(service));
-});
-
-</script>
-
-<script>const languageSelect = document.getElementById('language-select');
-const languageIcon = document.getElementById('language-toggle');
-const content = document.querySelector('.content');
-languageSelect.addEventListener('change', (event)=>{
-    const selectedLanguage = event.target.value;
-    const langElements = content.querySelectorAll('.lang');
-    langElements.forEach((element)=>{
-        element.classList.remove('active');
-    });
-    const activeLang = content.querySelector(`.lang[data-lang="${selectedLanguage}"]`);
-    if (activeLang) activeLang.classList.add('active');
-    languageSelect.classList.remove('active');
-});
-languageIcon.addEventListener('click', ()=>{
-    languageSelect.classList.toggle('active');
-});
-
-</script> 
-
+<script src="/index.d35e424a.js"></script>
+<script src="/index.8728a510.js"></script>
+<script src="/index.6d6ffdac.js"></script>
+<script src="/index.efef7983.js"></script>
 <script src="/Personal.59712999.js"></script></body>
 </html>
