@@ -1003,3 +1003,83 @@ max-width: 900px;
   margin-top: 90px;
   margin-bottom: 90px;
 }
+
+  /* Сторінка брендингу */
+
+.naan {
+  margin-top: 135px !important;
+}
+
+.brand-hero {
+  width: 100%;
+}
+  
+.naan-desc {
+  margin: 70px auto 0 auto; 
+  max-width: calc(100% - 90px); 
+  padding-right: 90px; 
+}
+  
+.naan-desc-area-buttons {
+  display: flex; 
+  gap: 20px; 
+  width: 100%; 
+  margin-bottom: 60px;
+}
+  
+.naan-button {
+  padding: 12px 24px;
+  border: 1px solid var(--black-color); 
+  color: var(--black-color); 
+  background-color: var(--white-color);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--additional-font);
+  text-align: center;
+  cursor: pointer; 
+  transition: all 0.3s ease;
+ }
+
+.naan-button:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  
+ }
+  
+.image-naan {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px; 
+}
+  
+.image-naan img {
+  max-width: 55%; 
+  height: auto; 
+}
+  
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  margin: 0 auto;
+}
+
+.full-width-image img {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.image-pair {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.image-pair img {
+  width: calc(50% - 10px); 
+  height: auto;
+}
