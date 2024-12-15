@@ -15,6 +15,28 @@
     display: flex;
     flex-direction: column;
   }
+
+  body.cursor-hidden {
+    cursor: none; 
+  }
+  
+  .circle-follow {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    z-index: 9999; 
+    transition: transform 0.1s ease-out;
+  }
   
   main {
     flex-grow: 1;
@@ -159,7 +181,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-
+  
   .language-select {
     position: absolute;
     left: 40px;
@@ -172,11 +194,12 @@
     font-size: 14px;
     color: #333;
     cursor: pointer;
-    display: none; 
+    visibility: hidden; 
+    z-index: 10; 
   }
   
   .language-select.active {
-    display: block; 
+    visibility: visible; 
   }
   
   .lang {
@@ -186,6 +209,7 @@
   .lang.active {
     display: block;
   }
+  
   
    /* Перша секція */
    section.first-section {
@@ -1146,4 +1170,39 @@ max-width: 900px;
 
 .naan-front {
   margin-top: 80px !important;
+}
+
+.naan-end {
+  display: flex; /* Розташовує елементи в один рядок */
+  align-items: center; /* Вирівнювання по вертикалі */
+  gap: 50px;
+  margin-top: 70px; /* Відстань між зображенням і відео */
+}
+
+
+.brand-video {
+  aspect-ratio: 16 / 9; /* Пропорції відео */
+  border: none;
+  pointer-events: none; /* Заборона взаємодії з відео */
+}
+
+.end-hero, 
+.brand-video {
+    width: 60%; /* Ширина 50% для обох елементів */
+    height: 320px; /* Фіксована висота для обох елементів */
+    object-fit: cover; /* Обрізає або масштабує зображення/відео для заповнення блоку */
+}
+
+.end-f {
+margin-top: 90px;
+}
+
+.end-img {
+margin-top: 60px;
+margin-bottom: -40px;
+}
+
+.end-stat {
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
