@@ -15,6 +15,28 @@ body {
   overflow-x: hidden;
 }
 
+body.cursor-hidden {
+  cursor: none;
+}
+
+.circle-follow {
+  color: #fff;
+  pointer-events: none;
+  z-index: 9999;
+  background-color: #000c;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform .1s ease-out;
+  display: flex;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
 main {
   flex-grow: 1;
 }
@@ -144,12 +166,13 @@ header {
 .language-select {
   color: #333;
   cursor: pointer;
+  visibility: hidden;
+  z-index: 10;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px 10px;
   font-size: 14px;
-  display: none;
   position: absolute;
   top: 50%;
   left: 40px;
@@ -157,7 +180,7 @@ header {
 }
 
 .language-select.active {
-  display: block;
+  visibility: visible;
 }
 
 .lang {
@@ -1089,5 +1112,38 @@ section.first-section {
 
 .naan-front {
   margin-top: 80px !important;
+}
+
+.naan-end {
+  align-items: center;
+  gap: 50px;
+  margin-top: 70px;
+  display: flex;
+}
+
+.brand-video {
+  aspect-ratio: 16 / 9;
+  pointer-events: none;
+  border: none;
+}
+
+.end-hero, .brand-video {
+  object-fit: cover;
+  width: 60%;
+  height: 320px;
+}
+
+.end-f {
+  margin-top: 90px;
+}
+
+.end-img {
+  margin-top: 60px;
+  margin-bottom: -40px;
+}
+
+.end-stat {
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=index.77a9bc14.css.map */
