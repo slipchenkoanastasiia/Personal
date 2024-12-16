@@ -176,10 +176,6 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    position: absolute;
-    left: 0; 
-    top: 50%;
-    transform: translateY(-50%);
   }
   
   .language-select {
@@ -194,22 +190,25 @@
     font-size: 14px;
     color: #333;
     cursor: pointer;
-    visibility: hidden; 
-    z-index: 10; 
+  
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    z-index: 10;
   }
   
   .language-select.active {
     visibility: visible; 
+    opacity: 1;
   }
   
   .lang {
-    display: none;
+    display: none; 
   }
   
   .lang.active {
-    display: block;
+    display: block; 
   }
-  
   
    /* Перша секція */
    section.first-section {

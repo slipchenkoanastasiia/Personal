@@ -157,22 +157,20 @@ header {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
 }
 
 .language-select {
   color: #333;
   cursor: pointer;
   visibility: hidden;
+  opacity: 0;
   z-index: 10;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px 10px;
   font-size: 14px;
+  transition: visibility .3s, opacity .3s;
   position: absolute;
   top: 50%;
   left: 40px;
@@ -181,6 +179,7 @@ header {
 
 .language-select.active {
   visibility: visible;
+  opacity: 1;
 }
 
 .lang {
