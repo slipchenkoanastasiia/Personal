@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Personal portfolio landing page",
   "scripts": {
+<<<<<<< HEAD
     "start": "parcel docs/index.html",
     "build": "parcel build docs/index.html"
+=======
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+>>>>>>> 1bd78ee95345c88baf117d73f35fc87e45bb315c
   },
   "keywords": ["portfolio", "landing page"],
   "author": "",
