@@ -190,7 +190,6 @@
     font-size: 14px;
     color: #333;
     cursor: pointer;
-  
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s ease, opacity 0.3s ease;
@@ -198,17 +197,18 @@
   }
   
   .language-select.active {
-    visibility: visible; 
+    visibility: visible;
     opacity: 1;
   }
   
   .lang {
-    display: none; 
+    display: none;
   }
   
   .lang.active {
-    display: block; 
+    display: block;
   }
+  
   
    /* Перша секція */
    section.first-section {
