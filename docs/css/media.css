@@ -1,0 +1,223 @@
+@media screen and (max-width: 767px) {
+    header {
+      width: 100%;
+      padding: 40px 20px;
+    }
+  
+    .language-switcher,
+    .content {
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .collaborate-btn {
+        padding: 8px 14px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+  
+    .nav-list {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+      }
+
+      .first-section h1 {
+        font-size: 35px; 
+        max-width: 100%; 
+        margin-bottom: 30px; 
+        padding: 20px;
+      }
+    
+      .scroll-indicator {
+        bottom: 150px !important; 
+        right: 10%;
+        font-size: 35px; 
+      }
+
+      .services-section {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    
+      .service  {
+        width: 100%; 
+        padding: 20px;
+        margin: 0 10px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .second-section {
+        padding: 10px 10px; 
+      }
+
+      .service-title {
+        font-size: 24px;
+      }
+
+      .service-list {
+        padding-left: 0;
+        list-style-position: inside; 
+      }
+    
+      .service-list li {
+        font-size: 16px;
+        text-align: left; 
+        margin-bottom: 10px; 
+      }
+    
+    .third-section {
+        padding: 60px 20px;
+        gap: 40px; 
+    }
+
+    .third-service-area {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 40px;
+        margin-bottom: 50px; 
+    }
+
+    .third-service-area-content {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .third-service-area-video {
+        display: block;
+        justify-content: center; 
+        transform: none; 
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .third-service-area-video video {
+        width: 100%; 
+        height: auto; 
+        border-radius: 10px;
+    }
+
+    .third-service-area-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start; 
+    }
+
+    .custom-button, .custom-button-2 {
+        width: auto; 
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .third-service-area-description, .third-service-area-description-2 {
+        font-size: 16px; 
+        margin-bottom: 20px; 
+        max-width: 100%; 
+        line-height: 1.5; 
+    }
+
+    .third-service-area-title {
+        font-size: 48px; 
+        margin-bottom: 15px; 
+    }
+
+    .third-service-area-button {
+        padding: 12px 24px;
+        font-size: 16px; 
+        margin-top: 40px; 
+    }
+
+    .services-section {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        width: 100%; 
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .service-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .service-description {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .service-perfect,
+    .service-outcome {
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .service-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 25px;
+        font-size: 16px;
+        text-align: center;
+        align-self: center; 
+    }
+
+    .fifth-section {
+        padding: 40px 10px; 
+      }
+    
+      .fifth-section .container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    
+      .subtitle {
+        font-size: 16px; 
+        margin-bottom: 30px;
+      }
+    
+      .main-title {
+        font-size: 30px; 
+        margin-bottom: 20px; 
+        line-height: 1.0;
+        margin-bottom: 20px;
+      }
+    
+      .collaboration-btn {
+        font-size: 14px; 
+        padding: 10px 20px; 
+      }
+    
+      .fifth-section .social-icons {
+        gap: 15px; 
+      }
+    
+      .fifth-section .social-icon svg {
+        width: 25px; 
+        height: 25px;
+      }
+     
+  }
+
+  
+    

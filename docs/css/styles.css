@@ -200,7 +200,7 @@
     visibility: visible;
     opacity: 1;
   }
-  
+
   .lang {
     display: none;
   }
@@ -208,7 +208,6 @@
   .lang.active {
     display: block;
   }
-  
   
    /* Перша секція */
    section.first-section {
@@ -456,7 +455,7 @@
   font-family: var(--additional-font);
   font-weight: 300;
   line-height: 1.2;
-  letter-spacing: 0.4;
+  letter-spacing: 0.4 !important;
   color: rgba(255, 255, 255, 0.8); 
   margin-bottom: 30px;
   max-width: 960px;
@@ -755,7 +754,6 @@
   line-height: 1.1;
   letter-spacing: 0.4;
   margin-bottom: 0px; 
-
 }
 
 .main-title {
@@ -803,9 +801,7 @@
   transform: scale(1.1); 
 }
 
-
-  /* Сторінка стратегії */
-
+/* Сторінка стратегії */
 .hero {
   margin: 150px auto 0 auto; 
   max-width: calc(100% - 90px); 
@@ -927,7 +923,6 @@ max-width: 900px;
   margin-bottom: 20px;
   text-align: left;
   letter-spacing: 0.4;
-
 }
 
 .stats-list {
@@ -985,7 +980,6 @@ max-width: 900px;
   height: auto; 
 }
 
-
 .img-card p {
   margin-top: 10px; 
   font-size: 18px; 
@@ -1027,8 +1021,7 @@ max-width: 900px;
   margin-bottom: 90px;
 }
 
-  /* Сторінка брендингу */
-
+/* Сторінка брендингу */
 .naan {
   margin-top: 135px !important;
 }
@@ -1067,7 +1060,6 @@ max-width: 900px;
 .naan-button:hover {
   color: var(--white-color);
   background-color: var(--black-color);
-  
  }
   
 .image-naan {
@@ -1085,7 +1077,6 @@ max-width: 900px;
   display: flex;
   flex-direction: column;
   gap: 30px; 
-
 }
 
 .full-width-image img {
@@ -1127,10 +1118,10 @@ max-width: 900px;
 }
 
 .portfolio-desc-area-buttons {
-      display: flex; 
-      gap: 20px; 
-      width: 100%; 
-      margin-bottom: 60px;
+  display: flex; 
+  gap: 20px; 
+  width: 100%; 
+  margin-bottom: 60px;
 }
       
 .portfolio-button {
@@ -1150,7 +1141,6 @@ max-width: 900px;
 .portfolio-button:hover {
   color: var(--white-color);
   background-color: var(--black-color);
-  
  }
 
  .front {
@@ -1172,33 +1162,32 @@ max-width: 900px;
 }
 
 .naan-end {
-  display: flex; /* Розташовує елементи в один рядок */
-  align-items: center; /* Вирівнювання по вертикалі */
+  display: flex; 
+  align-items: center; 
   gap: 50px;
-  margin-top: 70px; /* Відстань між зображенням і відео */
+  margin-top: 70px; 
 }
 
-
 .brand-video {
-  aspect-ratio: 16 / 9; /* Пропорції відео */
+  aspect-ratio: 16 / 9; 
   border: none;
-  pointer-events: none; /* Заборона взаємодії з відео */
+  pointer-events: none; 
 }
 
 .end-hero, 
 .brand-video {
-    width: 60%; /* Ширина 50% для обох елементів */
-    height: 320px; /* Фіксована висота для обох елементів */
-    object-fit: cover; /* Обрізає або масштабує зображення/відео для заповнення блоку */
+  width: 60%; 
+  height: 320px; 
+  object-fit: cover; 
 }
 
 .end-f {
-margin-top: 90px;
+  margin-top: 90px;
 }
 
 .end-img {
-margin-top: 60px;
-margin-bottom: -40px;
+  margin-top: 60px;
+  margin-bottom: -40px;
 }
 
 .end-stat {
