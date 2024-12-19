@@ -1170,13 +1170,11 @@ max-width: 900px;
   aspect-ratio: 16 / 9; 
   border: none;
   pointer-events: none; 
-  display: flex; /* Розташовує елементи в один рядок */
-  align-items: center; /* Вирівнювання по вертикалі */
+  display: flex;
+  align-items: center; 
   gap: 50px;
-  margin-top: 70px; /* Відстань між зображенням і відео */
+  margin-top: 70px; 
 }
-
-
 
 .end-hero, 
 .brand-video {

@@ -416,12 +416,12 @@ section.first-section {
 .third-service-area-description {
   font-size: 18px;
   font-family: var(--additional-font);
+  letter-spacing: .4px;
   color: #fffc;
   max-width: 960px;
   margin-bottom: 30px;
   font-weight: 300;
   line-height: 1.2;
-  letter-spacing: .4px !important;
 }
 
 .third-service-area-description-2 {
@@ -1124,6 +1124,10 @@ section.first-section {
   aspect-ratio: 16 / 9;
   pointer-events: none;
   border: none;
+  align-items: center;
+  gap: 50px;
+  margin-top: 70px;
+  display: flex;
 }
 
 .end-hero, .brand-video {
