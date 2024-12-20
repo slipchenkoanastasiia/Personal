@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    
+    <link rel="icon" href="./media/favicon.png" type="image/png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -33,18 +35,14 @@
         <option value="kk">Қазақ</option>
       </select>
     </div>
-  
     <div class="content">
       <p class="lang" data-lang="en">Hello!</p>
       <p class="lang active" data-lang="ua">Привіт!</p>
       <p class="lang" data-lang="kk">Сәлеметсіз бе!</p>
     </div>
-  
     <a href="./collab.html" class="collaborate-btn">Let's Collaborate</a>
   </header>
-
-  
-      
+   
 <main>
   <section class="hero">
      <div class="container">
@@ -59,96 +57,98 @@
   </section>
 
   <div class="hero-tabl">
-    <img src="./media/strat1.jpg" class="tabl1">
+    <img src="./media/strat1.jpg" class="tabl1" loading="lazy">
   </div>
           
-
-<section class="portfolio">
-  <div class="portfolio-desc">
-    <div class="portfolio-desc-area-buttons">
-      <div class="portfolio-button">Brand Strategy</div>
-      <div class="portfolio-button">Communication</div>
-      <div class="portfolio-button">Digital marketing</div>
+  <section class="portfolio">
+    <div class="portfolio-desc">
+      <div class="portfolio-desc-area-buttons">
+        <button class="portfolio-button">Brand Strategy</button>
+        <button class="portfolio-button">Communication</button>
+        <button class="portfolio-button">Digital marketing</button>
+      </div>
+      <h2 class="portfolio-title">Аналіз ефективності рекламної кампанії бутику спідниць LaVie</h2>
     </div>
-  <h2 class="portfolio-title">Аналіз ефективності рекламної кампанії бутику спідниць LaVie</h2>
-  <div class="portfolio-gallery">
-    <div class="portfolio-item">
-      <p class="portfolio-description">Дані рекламного кабінету охоплюють період із листопада 2023 року по листопад 2024 року. Кампанія демонструє стабільні результати, проте є певні коливання ефективності за місяцями. Нижче наведено ключові показники:</p>
-      <div class="campaign-stats">
-        <h3 class="campaign-title">Середні показники рекламної кампанії</h3> 
-        <ul class="stats-list">
-          <li><span class="service-label">Охоплення:</span> кампанія в середньому охоплювала 41 115 осіб на місяць, із частотою показу 1.91.</li>
-          <li><span class="service-label">CTR:</span> середній показник клікабельності склав 5.60%, що є хорошим показником ефективності оголошень.</li>
-          <li><span class="service-label">CPC:</span> у середньому вартість одного кліку становила $0.04, що свідчить про оптимальне використання бюджету.</li>
-          <li><span class="service-label">ROAS:</span> середнє значення ROAS за період — 73.89, що означає значну віддачу на вкладення.</li>
-          <li><span class="service-label">CPL:</span> кампанія витрачала в середньому $0.58 за кожного залученого ліда, що свідчить про ефективність у залученні клієнтів.</li>
-          <li><span class="service-label">Дохід:</span> середнє значення $694.40.</li>
+    <div class="portfolio-gallery">
+      <div class="portfolio-item">
+        <p class="portfolio-description">
+          Дані рекламного кабінету охоплюють період із листопада 2023 року по листопад 2024 року. Кампанія демонструє стабільні результати, проте є певні коливання ефективності за місяцями. Нижче наведено ключові показники:
+        </p>
+        <div class="campaign-stats">
+          <h3 class="campaign-title">Середні показники рекламної кампанії</h3>
+          <ul class="stats-list">
+            <li><span class="service-label">Охоплення:</span> кампанія в середньому охоплювала 41 115 осіб на місяць, із частотою показу 1.91.</li>
+            <li><span class="service-label">CTR:</span> середній показник клікабельності склав 5.60%, що є хорошим показником ефективності оголошень.</li>
+            <li><span class="service-label">CPC:</span> у середньому вартість одного кліку становила $0.04, що свідчить про оптимальне використання бюджету.</li>
+            <li><span class="service-label">ROAS:</span> середнє значення ROAS за період — 73.89, що означає значну віддачу на вкладення.</li>
+            <li><span class="service-label">CPL:</span> кампанія витрачала в середньому $0.58 за кожного залученого ліда.</li>
+            <li><span class="service-label">Дохід:</span> середнє значення $694.40.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio-img">
+        <div class="img-card">
+          <img width="90%" src="./media/strat2.jpg" alt="Зображення охоплення" loading="lazy">
+          <p class="service-label">Охоплення</p>
+        </div>
+        <div class="img-card">
+          <img width="85%" src="./media/strat3.jpg" alt="Зображення ROAS" loading="lazy">
+          <p class="service-label">ROAS</p>
+        </div>
+      </div>
+      <div class="campaign-stats-2">
+        <h3 class="campaign-title">Витрати та дохід</h3>
+        <ul class="stats-list-2">
+          <li><span class="service-label">Максимальні витрати:</span> $162.17 (01.10.2024).</li>
+          <li><span class="service-label">Мінімальні витрати:</span> $82.82 (01.12.2023).</li>
+          <li><span class="service-label">Середній дохід:</span> $694.40.</li>
+          <li><span class="service-label">ROAS:</span> найвищий 12.29 (01.12.2023), найнижчий — 3.54 (01.03.2024).</li>
         </ul>
       </div>
-    </div>
-    <div class="portfolio-img">
-      <div class="img-card">
-        <img width="90%" src="./media/strat2.jpg" alt="Project 2">
-        <p class="service-label">Охоплення</p>
+      <div class="portfolio-img">
+        <div class="img-card">
+          <img width="90%" src="./media/strat6.jpg" alt="Зображення витрат та доходу" loading="lazy">
+          <p class="service-label">Витрати та дохід</p>
+        </div>
       </div>
-      <div class="img-card">
-        <img width="85%" src="./media/strat3.jpg" alt="Project 3">
-        <p class="service-label">ROAS</p>
+      <div class="campaign-stats-2">
+        <h3 class="campaign-title">CPC, Leads</h3>
+        <ul class="stats-list-2">
+          <li><span class="service-label">Найнижчий CPC:</span> $0.02 (01.12.2023).</li>
+          <li><span class="service-label">Найвищий CPC:</span> $0.07 (01.03.2024).</li>
+          <li><span class="service-label">Максимальна кількість кліків:</span> 3 292.80 (01.12.2023).</li>
+          <li><span class="service-label">Мінімальна кількість кліків:</span> 1 230.60 (01.11.2024).</li>
+        </ul>
       </div>
-    </div>
-    <div class="campaign-stats-2">
-      <h3 class="campaign-title">Витрати та дохід</h3> 
-      <ul class="stats-list-2">
-        <li><span class="service-label">Максимальні витрати:</span> $162.17 (01.10.2024)</li>
-        <li><span class="service-label">Мінімальні витрати:</span> $82.82 (01.12.2023)</li>
-        <li><span class="service-label">Середній дохід:</span> $694.40</li>
-        <li><span class="service-label">ROAS</span> найвищий 12.29 (01.12.2023), найнижчий — 3.54 (01.03.2024)</li>
-      </ul>
-    </div>
-    <div class="portfolio-img">
-      <div class="img-card">
-        <img width="90%" src="./media/strat6.jpg" alt="Project 2">
-        <p class="service-label">Витрати да дохід</p>
+      <div class="portfolio-img-2">
+        <div class="img-card">
+          <img width="90%" src="./media/strat7.jpg" alt="Зображення CPC" loading="lazy">
+          <p class="service-label-2">CPC</p>
+        </div>
+        <div class="img-card">
+          <img width="90%" src="./media/strat4.jpg" alt="Зображення Leads" loading="lazy">
+          <p class="service-label">Leads</p>
+        </div>
       </div>
-    </div>
-   
-    <div class="campaign-stats-2">
-      <h3 class="campaign-title">CPC, Leads</h3> 
-      <ul class="stats-list-2">
-        <li><span class="service-label">Найнижчий CPC:</span> $0.02 (01.12.2023)</li>
-        <li><span class="service-label">Найвищий CPC:</span> $0.07 (01.03.2024)</li>
-        <li><span class="service-label">Максимальна кількість кліків:</span> 3 292.80 (01.12.2023)</li>
-        <li><span class="service-label">Мінімальна кількість кліків:</span> 1 230.60 (01.11.2024)</li>
-      </ul>
-    </div>
-    <div class="portfolio-img-2">
-      <div class="img-card">
-        <img width="90%" src="./media/strat7.jpg" alt="Project 2">
-        <p class="service-label-2">СPC</p>
+      <div class="campaign-stats-2">
+        <h3 class="portfolio-title-2">Результати</h3>
+        <p class="portfolio-description">
+          01.12.2023 демонструє найкращу ефективність із найвищим ROAS (12.29),
+          низьким CPC ($0.02), високим CTR (8.4%) та великою кількістю лідів (329.28).
+          Кампанія 01.03.2024 мала низький ROAS (3.54) і високий CPL ($0.98). Можливо, аудиторія була недостатньо
+          зацікавлена менш вдалим креативом для таргету.
+          Тож детально спланована рекламна кампанія дозволяє оптимізувати витрати та досягати високих фінансових результатів.
+        </p>
       </div>
-      <div class="img-card">
-        <img width="90%" src="./media/strat4.jpg" alt="Project 2">
-        <p class="service-label">Leads</p>
+      <div class="hero-content">
+        <h2 class="hero-title media-t">Чому це важливо?</h2>
+        <p class="hero-description-2 media-d">
+          Чітке позиціонування бренду, оптимізація ресурсів, адаптація до змін, підвищення конверсії.
+        </p>
       </div>
     </div>
-    <div class="campaign-stats-2">
-      <h3 class="portfolio-title-2">Результати</h3> 
-      <p class="portfolio-description">01.12.2023 демонструє найкращу ефективність із найвищим ROAS (12.29),
-         низьким CPC ($0.02), високим CTR (8.4%) та великою кількістю лідів (329.28).
-        Кампанія 01.03.2024 мала низький ROAS (3.54) і високий CPL ($0.98). Можливо, аудиторія була недостатньо
-        зацікавлена менш вдалим креативом для таргету. 
-        Тож детально спланована рекламна кампанія, що базується на аналізі даних, 
-        дозволяє оптимізувати витрати та досягати високих фінансових результатів.</p>
-  </div>
-
-  <div class="hero-content">
-    <h2 class="hero-title">Чому це важливо?</h2>
-    <p class="hero-description-2">
-      Чітке позиціонування бренду, оптимізація ресурсів, адаптація до змін, підвищення конверсії.</span>
-      </p>
-  </div>
-</section>
-
+  </section>
+ 
 <footer>
   <section class="fifth-section">
     <div class="container">

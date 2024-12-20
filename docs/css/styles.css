@@ -1173,7 +1173,6 @@ max-width: 900px;
   display: flex;
   align-items: center; 
   gap: 50px;
-  margin-top: 70px; 
 }
 
 .end-hero, 
@@ -1196,3 +1195,4 @@ max-width: 900px;
   margin-top: 60px;
   margin-bottom: 50px;
 }
+

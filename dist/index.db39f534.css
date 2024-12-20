@@ -308,13 +308,57 @@
 
   .media-t {
     text-align: left;
+    width: 200px;
     font-size: 55px;
   }
 
   .media-d {
     text-align: left;
-    width: 80%;
+    width: 100%;
     font-size: 18px;
+  }
+
+  .naan-desc-area-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+  }
+
+  .tabl1 {
+    border: none;
+    border-radius: 12px;
+    width: 340px;
+    margin-top: -100px;
+    margin-bottom: 100px !important;
+  }
+
+  .img-card-container {
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+  }
+
+  .img-card {
+    flex: 100%;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 1024px) {
+  .first-section h1 {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 55px;
+  }
+
+  .service {
+    width: 28%;
+  }
+
+  .collab-section {
+    margin-top: -100px;
+    margin-bottom: -200px;
   }
 }
 /*# sourceMappingURL=index.db39f534.css.map */
