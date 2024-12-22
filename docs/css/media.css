@@ -349,12 +349,28 @@
 
   .img-card-container {
     display: flex;
-    flex-direction: column; /* Розташовуємо картки в стовпчик */
-    gap: 20px; /* Відступ між картками */
+    flex-direction: column; 
+    gap: 20px; 
   }
 
   .img-card {
-    flex: 1 1 100%; /* Картки займають всю ширину на мобільних пристроях */
+    flex: 1 1 100%; 
+  }
+
+  .end-video {
+    width: 100%;
+  }
+
+  .naan-title {
+    width: 300px !important;
+  }
+
+  .mob-naan {
+    display: flex; 
+    flex-direction: column; 
+    width: 600px; 
+    margin: 0 auto;
+    gap: 40px;
   }
      
   }
@@ -369,7 +385,7 @@
     }
 
     .service {
-      width: 28%; /* Картки займають 48% ширини, щоб вміститися в два ряди */
+      width: 28%; 
     }
 
 .collab-section {
