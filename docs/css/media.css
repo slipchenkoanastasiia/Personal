@@ -296,10 +296,20 @@
           flex-direction: column; 
           align-items: center;
           gap: 20px; 
+          padding: 0; 
+          margin: 0 !important; 
         }
       
-        .end-hero, 
+        .naan-end img {
+          width: 100%; 
+          height: auto; 
+          display: block; 
+          padding: 0; 
+          margin: 0 !important; 
+        }
+
         .brand-video {
+          border-radius: 10px;
           width: 100%;
           height: auto; 
         }
@@ -368,10 +378,38 @@
   .mob-naan {
     display: flex; 
     flex-direction: column; 
-    width: 600px; 
+    width: 720px; 
     margin: 0 auto;
     gap: 40px;
   }
+
+  .mob-sneaker {
+    display: flex; 
+    flex-direction: column; 
+    width: 820px; 
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  
+
+  .portfolio-title.naan-title {
+    width: 300px !important;
+  }
+  
+
+  .portfolio-title {
+    font-size: 24px;
+  }
+
+  .portfolio-title-2 {
+    font-size: 24px;
+  }
+
+  .naan-desc {
+    margin-left: 20px;
+  }
+
      
   }
 

@@ -282,10 +282,21 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0;
     display: flex;
+    margin: 0 !important;
   }
 
-  .end-hero, .brand-video {
+  .naan-end img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: block;
+    margin: 0 !important;
+  }
+
+  .brand-video {
+    border-radius: 10px;
     width: 100%;
     height: auto;
   }
@@ -354,9 +365,29 @@
   .mob-naan {
     flex-direction: column;
     gap: 40px;
-    width: 600px;
+    width: 720px;
     margin: 0 auto;
     display: flex;
+  }
+
+  .mob-sneaker {
+    flex-direction: column;
+    gap: 40px;
+    width: 820px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .portfolio-title.naan-title {
+    width: 300px !important;
+  }
+
+  .portfolio-title, .portfolio-title-2 {
+    font-size: 24px;
+  }
+
+  .naan-desc {
+    margin-left: 20px;
   }
 }
 
