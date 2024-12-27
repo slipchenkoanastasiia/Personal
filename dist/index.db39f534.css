@@ -213,9 +213,13 @@
 
   .collab-section p {
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 20px;
     font-size: 14px !important;
+  }
+
+  .contact-section {
+    margin-top: -180px;
   }
 
   .hero {
