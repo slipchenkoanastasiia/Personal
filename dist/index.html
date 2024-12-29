@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
     <title>Personal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,10 +208,21 @@
           
       </main>
 
+      <script>if (navigator.userAgent.includes('Instagram')) {
+    const videos = document.querySelectorAll('video, iframe');
+    videos.forEach((video)=>{
+        video.style.position = 'relative';
+        video.style.zIndex = '0';
+    });
+}
+
+</script>
+        <script src="/docs.1caa2c4a.js"></script></body>
+        
 <script src="/index.abbe5db7.js"></script>
 <script src="/index.979fef59.js"></script>
 <script src="/index.d0b4af8b.js"></script>
 <script src="/index.2b039d63.js" defer=""></script>
 
-<script src="/docs.1caa2c4a.js"></script></body>
+
 </html>
