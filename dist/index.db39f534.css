@@ -4,6 +4,17 @@
     padding: 40px 20px;
   }
 
+  iframe, video {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .third-service-area-video video {
+    z-index: 1 !important;
+    position: static !important;
+  }
+
   .language-switcher, .content {
     width: 100%;
     padding: 10px 0;
